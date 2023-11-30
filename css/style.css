@@ -1,1 +1,63 @@
-.body
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+
+  --gray: #C0C0C1;
+  --white: #FAF3F3;
+  --whiteOpac: #FAF3F3E0;
+  --blue: #4a93d7;
+  --darkblue: #183a59;
+  --black: #01161E;
+  --blackHover: #01161EAA;
+  --backgroundBlack: #21363A; 
+  --raisin: #342E37;
+
+  --std: all 0.3s ease-in-out;
+}
+
+body {
+  height: 100vh;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  margin: 2% 0;
+  font-size: 6rem;
+}
+
+#winner {
+  display: none;
+}
+
+#game {
+  background-color: var(--blue);
+  width: 42rem;
+  height: 36rem;
+  padding: 1%;
+  border: 1rem solid var(--darkblue);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slot {
+  width: 4rem;
+  max-height: 4rem;
+}
+
+.col {
+  height: 100%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
