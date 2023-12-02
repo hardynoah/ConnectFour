@@ -11,64 +11,66 @@
 </head>
 <body>
   <h1 id="title">Connect Four</h1>
-  <h2 id="winner">Winner: </h2>
+  <h2 id="winner"><br></h2>
   <div id="game">
-    <div class="col" id="col1">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col1" onclick="takeTurn(1)">
+      <img class="slot" id="Slot11" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot12" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot13" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot14" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot15" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot16" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col2">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col2" onclick="takeTurn(2)">
+      <img class="slot" id="Slot21" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot22" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot23" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot24" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot25" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot26" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col3">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col3" onclick="takeTurn(3)">
+      <img class="slot" id="Slot31" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot32" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot33" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot34" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot35" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot36" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col4">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col4" onclick="takeTurn(4)">
+      <img class="slot" id="Slot41" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot42" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot43" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot44" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot45" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot46" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col5">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col5" onclick="takeTurn(5)">
+      <img class="slot" id="Slot51" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot52" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot53" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot54" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot55" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot56" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col6">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col6" onclick="takeTurn(6)">
+      <img class="slot" id="Slot61" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot62" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot63" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot64" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot65" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot66" src="img/whitecircle.png" alt="game piece" >
     </div>
-    <div class="col" id="col7">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
-      <img class="slot" src="img/white circle.png" alt="game piece">
+    <div class="col" id="col7" onclick="takeTurn(7)">
+      <img class="slot" id="Slot71" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot72" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot73" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot74" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot75" src="img/whitecircle.png" alt="game piece" >
+      <img class="slot" id="Slot76" src="img/whitecircle.png" alt="game piece" >
     </div>
   </div>
+
+  <h2 class="red" id="turn" onclick="newGame()">RED's turn...</h2>
 </body>
 </html>
