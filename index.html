@@ -10,6 +10,17 @@
   <script src="js/game.js"></script>
 </head>
 <body>
+  <div class="howToPlayOff" id="howToPlay">
+    <div class="background" onclick="toggleInstructions()"></div>
+    <div class="modal" onclick="">
+      <h2 id="howToTitle">How To Play Connect Four</h2>
+      <p id="howToDesc">This game involves two players. When it is your turn, click on a column to place a piece down.
+          To win the game, place four of your color pieces in a row. You can win horizontally, vertically, or 
+          even diagonally. Have fun!
+      </p>
+      <h2 id="closeModal" class="instructions" onclick="toggleInstructions()">X</h2>
+    </div>
+  </div>
   <h1 id="title">Connect Four</h1>
   <h2 id="winner"><br></h2>
   <div id="game">
@@ -72,5 +83,6 @@
   </div>
 
   <h2 class="red" id="turn" onclick="newGame()">RED's turn...</h2>
+  <h3 id="howToButton" class="instructions" onclick="toggleInstructions()">How To Play</h3>
 </body>
 </html>
