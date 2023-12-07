@@ -21,6 +21,22 @@
       <h2 id="closeModal" class="instructions" onclick="toggleInstructions()">X</h2>
     </div>
   </div>
+
+  <div class="settingsOff" id="settingsModal">
+    <div class="background" onclick="toggleSettings()"></div>
+    <div id="settingsButtons" class="modal">
+      <div id="redSetting">
+        <h3 class="settingsButton" onclick="nextRed()">Change Red Color</h3>
+        <img id="redSettingImg" class="settingsImg" src="img/redcircle.png" alt="red piece" >
+      </div>
+      <div id="yellowSetting">
+        <h3 class="settingsButton" onclick="nextYellow()">Change Yellow Color</h3>
+        <img id="yellowSettingImg" class="settingsImg" src="img/yellowcircle.png" alt="yellow piece" >
+      </div>
+      <h2 id="closeSettings" class="instructions" onclick="toggleSettings()">X</h2>
+    </div>
+  </div>
+
   <h1 id="title">Connect Four</h1>
   <h2 id="winner"><br></h2>
   <div id="game">
@@ -84,5 +100,7 @@
 
   <h2 class="red" id="turn" onclick="newGame()">RED's turn...</h2>
   <h3 id="howToButton" class="instructions" onclick="toggleInstructions()">How To Play</h3>
+  <h3 id="settings" class="instructions" onclick="toggleSettings()">Settings</h3>
+  
 </body>
 </html>
